@@ -22,7 +22,7 @@ def deal():
     global player3
     global player4
 
-    deck()
+    deck() # Should be moved to engine. Also need add returns to each function to push engine on.
     shuffle(cards)
 
     player1 = cards[:5]
@@ -32,6 +32,15 @@ def deal():
 
 
 def declare_trump():
+
+# Need to somehow loop through each player to decide trump. Create some kind of condition to 
+# determine whether player orders up. Also need to add interactive mode for player4 to order up.
+# If no one orders up, misdeal is declared and cards are redealt.
+
+
+
+
+
     set_trump(player1, trump_suit)
     set_trump(player2, trump_suit)
     set_trump(player3, trump_suit)
